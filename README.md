@@ -94,3 +94,19 @@ Angular 18  To create and register a standalone component
 ng generate component <Component-name> --standalone
 NG8001: 'courses' is not a known element:
 Error : 1. If 'courses' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+
+#Angular CLI to generate a component
+ng generate component courses --standalone
+ng g C courses
+
+#Angular CLI to generate a service
+ng generate service email
+ng g S email
+
+#@Component()
+Decorator that marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
+Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.
+Angular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated for a given element in a template.
+
+Standalone components can be directly imported in any other standalone component or NgModule. NgModule based apps on the other hand require components to belong to an NgModule in order for them to be available to another component or application. To make a component a member of an NgModule, list it in the declarations field of the NgModule metadata.
+Note that, in addition to these options for configuring a directive, you can control a component's runtime behavior by implementing life-cycle hooks. For more information, see the Lifecycle Hooks guide.
