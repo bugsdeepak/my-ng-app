@@ -1,4 +1,4 @@
-Angular Set up and Interview Questions
+# Angular Set up and Interview Questions
 
 1.	Install Node.js
 2.	npm install -g @angular/cli
@@ -6,7 +6,7 @@ Angular Set up and Interview Questions
 4.	In your project directory, navigate to the first-app directory and run “npm install”  to install the dependencies needed to run the app
 5.	 Run this command to build and serve the default app.  ng serve –port 4200 (default port)
 
-Review The Files in the Project
+# Review The Files in the Project
 
 1.	In your project directory, navigate to the first-app directory.
 2.	Open the src directory to see these files.
@@ -29,7 +29,7 @@ iv.	angular.json describes the Angular app to the app building tools.
 v.	package.json is used by npm (the node package manager) to run the finished app.
 vi.	tsconfig.* are the files that describe the app's configuration to the TypeScript compiler.
 
-Push to Github
+# Push to Github
 echo "# first-app" >> README.md
 git init
 git add README.md
@@ -95,15 +95,15 @@ ng generate component <Component-name> --standalone
 NG8001: 'courses' is not a known element:
 Error : 1. If 'courses' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
 
-#Angular CLI to generate a component
+# Angular CLI to generate a component
 ng generate component courses --standalone
 ng g C courses
 
-#Angular CLI to generate a service
+# Angular CLI to generate a service
 ng generate service email
 ng g S email
 
-#@Component()
+# @Component()
 Decorator that marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
 Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.
 Angular components are a subset of directives, always associated with a template. Unlike other directives, only one component can be instantiated for a given element in a template.
