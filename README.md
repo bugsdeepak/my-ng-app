@@ -97,6 +97,7 @@ Error : 1. If 'courses' is an Angular component, then verify that it is included
 
 # Angular CLI to generate a component
 ng generate component courses --standalone
+
 ng g C courses
 
 # Angular CLI to generate a service
