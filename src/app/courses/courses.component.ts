@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoursesService } from './courses.service';
 
+//The following is Component Decorator. It is a function that takes an object as an argument.
 @Component({
   selector: 'courses', // This is simple tag. For div id use #courses for class use .courses
   //template: `<h2>{{ title }}</h2>`,
