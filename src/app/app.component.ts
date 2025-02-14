@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CoursesComponent } from "./courses/courses.component";
+import { CoursesService } from './courses/courses.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,12 @@ import { CoursesComponent } from "./courses/courses.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'my-ng-app';
+export class AppComponent implements OnInit {
+
+  private title = 'my-ng-app';
+  constructor(service: CoursesService) {}
+    
+
+    ngOnInit(): void { }
+      
 }

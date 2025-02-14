@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoursesService } from './courses.service';
+import { Observable } from 'rxjs';
 
 //The following is Component Decorator. It is a function that takes an object as an argument.
 @Component({
@@ -21,7 +22,7 @@ import { CoursesService } from './courses.service';
 export class CoursesComponent {
 
   title = 'List of Courses';
-  courses ;  //= ["Java", "JavaScript", "TypeScript"];
+  courses : Observable<string[]>; //courses is an array of strings
   
   //Dependency Injection ==> we are injecting the CoursesService into the constructor of the CoursesComponent class
   //Register the dependency in the module as a "provider". This is a singleton object.

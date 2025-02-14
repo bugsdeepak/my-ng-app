@@ -1,5 +1,6 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
+import { provideHttpClient } from '@angular/common/http';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
@@ -12,6 +13,8 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     //Dependency Injection ==> we are injecting the CoursesService into the constructor of the CoursesComponent class
     //this is a singleton object
-    CoursesService
+    CoursesService,
+    //the following is a helper function that returns an object that is used to configure the HttpClient
+    provideHttpClient()
   ]
 };
