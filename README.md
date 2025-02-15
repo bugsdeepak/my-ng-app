@@ -102,6 +102,7 @@ ng g C courses
 
 # Angular CLI to generate a service
 ng generate service email
+
 ng g S email
 
 # @Component()
@@ -111,3 +112,8 @@ Angular components are a subset of directives, always associated with a template
 
 Standalone components can be directly imported in any other standalone component or NgModule. NgModule based apps on the other hand require components to belong to an NgModule in order for them to be available to another component or application. To make a component a member of an NgModule, list it in the declarations field of the NgModule metadata.
 Note that, in addition to these options for configuring a directive, you can control a component's runtime behavior by implementing life-cycle hooks. For more information, see the Lifecycle Hooks guide.
+
+# Routing
+Routing helps you change what the user sees in a single-page app.
+To handle the navigation from one view to the next, you use the Angular Router. The Router enables navigation by interpreting a browser URL as an instruction to change the view.
+
