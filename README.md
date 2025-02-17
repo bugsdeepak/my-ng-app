@@ -117,3 +117,12 @@ Note that, in addition to these options for configuring a directive, you can con
 Routing helps you change what the user sees in a single-page app.
 To handle the navigation from one view to the next, you use the Angular Router. The Router enables navigation by interpreting a browser URL as an instruction to change the view.
 
+# Ng Modules Remove from Angular
+NgModule is not technically removed from Angular, but it has become optional with the introduction of standalone components, directives, and pipes.
+## Standalone Components
+Standalone components, introduced in Angular 14, aim to simplify the development process by reducing the need for NgModules. 
+Angular 17 further enhances this by allowing the creation of entirely NgModule-less applications.
+Standalone components can be created by setting the standalone: true flag in the component decorator. They do not need to be declared in an NgModule and can import their dependencies directly. This provides more flexibility and reduces boilerplate code
+
+# Notes
+1. Any component created, in order to be used, have to declared in the "imports" section of app.component.ts file
