@@ -14,9 +14,15 @@ import { Observable } from 'rxjs';
   //  </li>
   //  </ul>
   //`,
+  //Exports all the basic Angular directives and pipes, such as NgIf, NgForOf, DecimalPipe, and so on. 
+  //Re-exported by BrowserModule, which is included automatically in the root AppModule when you create a new app with 
+  //the CLI new command.
   imports: [CommonModule],  
   templateUrl: './courses.component.html',
-  styleUrl: './courses.component.css'
+  styleUrl: './courses.component.css',
+  // Standalone components are not part of any module. They are not imported into any module.
+  //They do not need to be declared in an NgModule and can import their dependencies directly. 
+  standalone: true
 })
 
 export class CoursesComponent {
