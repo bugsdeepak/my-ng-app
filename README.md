@@ -124,5 +124,21 @@ Standalone components, introduced in Angular 14, aim to simplify the development
 Angular 17 further enhances this by allowing the creation of entirely NgModule-less applications.
 Standalone components can be created by setting the standalone: true flag in the component decorator. They do not need to be declared in an NgModule and can import their dependencies directly. This provides more flexibility and reduces boilerplate code
 
+# Life Cycle Hooks
+All angular components and directives have life cycle hooks as angular create, update and destorys them.
+Components have more life cycle hooks than directives.
+## Common Life Cycle Hooks
+1. ngOnInit
+2. ngOnChanges
+3. ngDoCheck
+## Only in Components
+1. ngAfterContentInit
+2. ngAfterContentChecked
+3. ngAfterViewInit
+4. ngAfterViewChecked
+5. ngOnDestroy
+
+
 # Notes
 1. Any component created, in order to be used, have to declared in the "imports" section of app.component.ts file
+3. Constructor is not a lifecycle hook, its a typescript future.
